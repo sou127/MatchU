@@ -17,7 +17,7 @@
 - [x] Categorize projects
 - [x] Filter/Search groups
 - [x] Leave comments
-- [ ] Delete Project (Only Group Creator)
+- [x] Delete Project (Only Group Creator)
 
 ### Create Meetings
 - [ ] In-meeting video conference
