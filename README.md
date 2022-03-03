@@ -13,9 +13,11 @@
 ### Group/Project
 - [x] Create group/project
 - [x] Add members to project
+- [x] Project detail page
 - [x] Categorize projects
 - [ ] Filter/Search groups
-- [ ] Leave comments
+- [x] Leave comments
+- [ ] Delete Project (Only Group Creator)
 
 ### Create Meetings
 - [ ] In-meeting video conference
