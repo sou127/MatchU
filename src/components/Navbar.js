@@ -1,6 +1,5 @@
 // styles & images
 import './Navbar.css'
-import Temple from '../assets/temple.svg'
 
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useLogout } from '../hooks/useLogout'
@@ -15,7 +14,6 @@ export default function Navbar() {
       {authIsReady && (
         <ul>
             <li className='logo'>
-                <img src={Temple} alt="Logo"></img>
                 <span>MatchU</span>
             </li>
 
