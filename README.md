@@ -1,5 +1,8 @@
 # [Yahoo HackU] Project - MatchU
 
+### [Click here](/README_JP.md "Japanese Readme") to view Japanese README
+### [README日本語版](/README_JP.md "README日本語版") 
+
 ## To do
 
 ### Registration and Users
