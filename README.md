@@ -15,7 +15,7 @@
 - [x] Add members to project
 - [x] Project detail page
 - [x] Categorize projects
-- [ ] Filter/Search groups
+- [x] Filter/Search groups
 - [x] Leave comments
 - [ ] Delete Project (Only Group Creator)
 
