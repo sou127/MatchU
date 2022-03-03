@@ -11,15 +11,15 @@
 - [x] Create group/project
 - [x] Add members to project
 - [x] Categorize projects
-- [] Filter/Search groups
-- [] Leave comments
+- [ ] Filter/Search groups
+- [ ] Leave comments
 
 ### Create Meetings
-- [] In-meeting video conference
-- [] In-meeting chat
-- [] In-meeting coding editor
-- [] In-meeting word editor
-- [] In-meeting whiteboard
+- [ ] In-meeting video conference
+- [ ] In-meeting chat
+- [ ] In-meeting coding editor
+- [ ] In-meeting word editor
+- [ ] In-meeting whiteboard
 
 ## Installation
 
