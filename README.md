@@ -13,7 +13,7 @@
 
 ### Registration and Users
 - [x] User registration, login and logout
-- [x] User profile icon
+- [x] User profile page
 - [x] Show all/active users
 
 ### Group/Project
