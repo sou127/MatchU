@@ -3,6 +3,12 @@
 ### [Click here](/README_JP.md "Japanese Readme") to view Japanese README
 ### [README日本語版](/README_JP.md "README日本語版") 
 
+## Screenshots
+
+<img width="959" alt="image" src="https://user-images.githubusercontent.com/24977991/156712646-3fad83ed-ca30-411e-841c-07909b0a8c10.png">
+![image](https://user-images.githubusercontent.com/24977991/156712703-23155be0-a623-4b0a-b995-4fc18478abc1.png)
+
+
 ## To do
 
 ### Registration and Users
