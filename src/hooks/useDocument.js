@@ -15,7 +15,7 @@ export const useDocument = (collection, id) => {
         setError(null)
       }
       else {
-        setError('No such group/project exists')
+        setError('No such document exists')
       }
     }, err => {
       console.log(err.message)

@@ -86,10 +86,10 @@ export default function Create() {
 
   return (
     <div className="create-form">
-      <h2 className="page-title">Create a new Project</h2>
+      <h2 className="page-title">Create a new group</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          <span>Project name:</span>
+          <span>Group name:</span>
           <input
             required 
             type="text" 
@@ -98,7 +98,7 @@ export default function Create() {
           />
         </label>
         <label>
-          <span>Project Details:</span>
+          <span>Group Details:</span>
           <textarea 
             required
             onChange={(e) => setDetails(e.target.value)}

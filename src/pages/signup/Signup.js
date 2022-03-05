@@ -10,15 +10,18 @@ export default function Signup() {
   const [displayName, setDisplayName] = useState('')
   const [thumbnail, setThumbnail] = useState(null)
   const [thumbnailError, setThumbnailError] = useState(null)
+  const [bio, setBio] = useState('')
+  const [studying, setStudying] = useState('')
   const { signup, isPending, error } = useSignup()
   
   const handleSubmit = (e) => {
     e.preventDefault()
-    signup(email, password, displayName, thumbnail)
+    signup(email, password, displayName, thumbnail, bio, studying)
   }
 
   const handleFileChange = (e) => {
     setThumbnail(null)
+    
     let selected = e.target.files[0]
     // console.log(selected)
 
@@ -77,6 +80,24 @@ export default function Signup() {
           onChange={handleFileChange}
         />
         {thumbnailError && <div className="error">{thumbnailError}</div>}
+      </label>
+      <label>
+        <span>About you:</span>
+        <input
+          required
+          type="text" 
+          onChange={(e) => setBio(e.target.value)} 
+          value={bio}
+        />
+      </label>
+      <label>
+        <span>Studying:</span>
+        <input
+          required
+          type="text" 
+          onChange={(e) => setStudying(e.target.value)} 
+          value={studying}
+        />
       </label>
       {!isPending && <button className="btn">Sign up</button>}
       {isPending && <button className="btn" disabled>Loading...</button>}

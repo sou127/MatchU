@@ -6,6 +6,13 @@
     background: #fbfbfb;
     color: var(--heading-color);
 }
+.user-list a {
+    text-decoration: none;
+    color: black;
+}
+.user-list a:hover {
+    color: gray;
+}
 .user-list h2 {
     text-align: right;
     margin-bottom: 40px;

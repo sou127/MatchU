@@ -1,5 +1,7 @@
 import { useCollection } from '../hooks/useCollection'
 
+import { Link } from 'react-router-dom'
+
 // components
 import Avatar from './Avatar'
 
@@ -17,8 +19,10 @@ export default function ActiveUsers() {
       {documents && documents.map(user => (
         <div key={user.id} className="user-list-item">
           {user.online && <span className='active-user'></span>}
-          <span>{user.displayName}</span>
-          <Avatar src={user.photoURL} />
+          <Link to={`/profile/${user.id}`} key={user.id}>
+            <span>{user.displayName}</span>
+          </Link>
+            <Avatar src={user.photoURL} />
         </div>
       ))}
     </div>

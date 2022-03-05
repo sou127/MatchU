@@ -21,6 +21,8 @@ export default function ProjectList({projects}) {
                 </div>
             </Link>
         ))}
+
+
     </div>
   )
 }

@@ -12,6 +12,8 @@ import Project from './pages/project/Project';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import ActiveUsers from './components/ActiveUsers';
+import Profile from './pages/profile/Profile';
+
 
 function App() {
   const { user, authIsReady } = useAuthContext()
@@ -24,6 +26,10 @@ function App() {
           <div className='container'>
             <Navbar />
             <Switch>
+              <Route exact path="/profile/:uid">
+                {!user && <Redirect to="/login" />}
+                {user && <Profile />}
+              </Route>
               <Route exact path="/">
                 {!user && <Redirect to="/login" />}
                 {user && <Dashboard />}
@@ -46,9 +52,11 @@ function App() {
               </Route>
             </Switch>
           </div>
+          
           {user && (
             <ActiveUsers></ActiveUsers>
           )}
+          
         </BrowserRouter>
       )}
     </div>
