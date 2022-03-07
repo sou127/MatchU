@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import ActiveUsers from './components/ActiveUsers';
 import Profile from './pages/profile/Profile';
+import Meeting from './pages/meeting/Meeting';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       {authIsReady && (
+        <>
         <BrowserRouter>
           {user && <Sidebar></Sidebar>}
           <div className='container'>
@@ -50,6 +52,10 @@ function App() {
                 {!user && <Signup />}
                 {user && <Redirect to="/" />}
               </Route>
+              <Route exact path="/projects/:id/meeting">
+                {user && <Meeting />}
+                {!user && <Redirect to="/" />}
+              </Route>
             </Switch>
           </div>
           
@@ -58,6 +64,8 @@ function App() {
           )}
           
         </BrowserRouter>
+          
+        </>
       )}
     </div>
   );

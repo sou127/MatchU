@@ -2,6 +2,7 @@ import Avatar from "../../components/Avatar"
 import { useFirestore } from "../../hooks/useFirestore"
 import { useAuthContext } from "../../hooks/useAuthContext"
 import { useHistory } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function ProjectSummary({ project }) {
   const history = useHistory()
@@ -36,6 +37,10 @@ export default function ProjectSummary({ project }) {
       {user.uid === project.createdBy.id && (
         <button className="btn" onClick={handleClick}>Mark as Complete</button>
       )}
+      <Link to={`/projects/${project.id}/meeting`}>
+        <button className="btn">Start Meeting</button>
+      </Link>
+
     </div>
   )
 }

@@ -6,7 +6,7 @@ import { useLogout } from '../hooks/useLogout'
 
 import { Link } from 'react-router-dom'
 
-import Logo from './../assets/logo.png'
+// import Logo from './../assets/logo.png'
 
 export default function Navbar() {
   const { user, authIsReady } = useAuthContext()
@@ -16,7 +16,7 @@ export default function Navbar() {
       {authIsReady && (
         <ul>
             <li className='logo'>
-                <img src={Logo} alt="MatchU Logo" />
+                {/* <img src={Logo} alt="MatchU Logo" /> */}
                 <span>MatchU</span>
             </li>
 

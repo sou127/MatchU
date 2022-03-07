@@ -26,11 +26,11 @@
 - [x] Delete Project (Only Group Creator)
 
 ### Create Meetings
-- [ ] In-meeting video conference
-- [ ] In-meeting chat
+- [x] In-meeting video conference
+- [x] In-meeting chat
 - [ ] In-meeting coding editor
 - [ ] In-meeting word editor
-- [ ] In-meeting whiteboard
+- [x] In-meeting whiteboard
 
 ## Installation
 
