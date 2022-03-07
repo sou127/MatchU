@@ -14,6 +14,7 @@ import Sidebar from './components/Sidebar';
 import ActiveUsers from './components/ActiveUsers';
 import Profile from './pages/profile/Profile';
 import Meeting from './pages/meeting/Meeting';
+import LandingPage from './pages/landingpage/LandingPage';
 
 
 function App() {
@@ -28,12 +29,16 @@ function App() {
           <div className='container'>
             <Navbar />
             <Switch>
+              <Route exact path="/home">
+                {user && <Redirect to="/" />}
+                {!user && <LandingPage />}
+              </Route>
               <Route exact path="/profile/:uid">
                 {!user && <Redirect to="/login" />}
                 {user && <Profile />}
               </Route>
               <Route exact path="/">
-                {!user && <Redirect to="/login" />}
+                {!user && <Redirect to="/home" />}
                 {user && <Dashboard />}
               </Route>
               <Route exact path="/create">
@@ -56,12 +61,16 @@ function App() {
                 {user && <Meeting />}
                 {!user && <Redirect to="/" />}
               </Route>
+              <Route exact path="/users">
+                {user && <ActiveUsers />}
+                {!user && <Redirect to="/" />}
+              </Route>
             </Switch>
           </div>
           
-          {user && (
+          {/* {user && (
             <ActiveUsers></ActiveUsers>
-          )}
+          )} */}
           
         </BrowserRouter>
           

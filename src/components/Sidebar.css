@@ -45,3 +45,13 @@
 .sidebar .links .active img {
   filter: invert(40%);
 }
+
+a {
+  text-decoration: none;
+}
+
+.user span {
+  text-decoration: none;
+  color: #ffe;
+  font-size: 12px;
+}

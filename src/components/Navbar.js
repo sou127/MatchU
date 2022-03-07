@@ -16,8 +16,10 @@ export default function Navbar() {
       {authIsReady && (
         <ul>
             <li className='logo'>
+              <Link to="/home">
                 {/* <img src={Logo} alt="MatchU Logo" /> */}
                 <span>MatchU</span>
+              </Link>
             </li>
 
             {!user && (

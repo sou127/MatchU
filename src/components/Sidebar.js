@@ -7,6 +7,8 @@ import { useAuthContext } from "../hooks/useAuthContext"
 import "./Sidebar.css"
 import DashboardIcon from '../assets/dashboard_icon.svg'
 import AddIcon from '../assets/add_icon.svg'
+import UsersIcon from '../assets/users.svg'
+import { Link } from "react-router-dom"
 
 export default function Sidebar() {
   const { user } = useAuthContext()
@@ -15,10 +17,11 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebar-content">
         <div className="user">
-          <>
-          <Avatar src={user.photoURL}></Avatar>
-          <p>Hey, {user.displayName}!</p> 
-          </> 
+            <Avatar src={user.photoURL}></Avatar>
+            <p>Hey, {user.displayName}!</p> 
+          <Link to={`/profile/${user.uid}`}>
+            <span>View Profile</span>
+          </Link>
         </div>  
         <nav className="links">
           <ul>
@@ -32,6 +35,12 @@ export default function Sidebar() {
               <NavLink to="/create">
                 <img src={AddIcon} alt="add project icon" />
                 <span>New Group</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/users">
+                <img className="toinv" width="25px" src={UsersIcon} alt="users icon" />
+                <span>Study Partner</span>
               </NavLink>
             </li>
           </ul>
