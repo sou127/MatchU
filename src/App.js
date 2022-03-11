@@ -15,6 +15,7 @@ import ActiveUsers from './components/ActiveUsers';
 import Profile from './pages/profile/Profile';
 import Meeting from './pages/meeting/Meeting';
 import LandingPage from './pages/landingpage/LandingPage';
+import Schedule from './pages/schedule/Schedule';
 
 
 function App() {
@@ -44,6 +45,10 @@ function App() {
               <Route exact path="/create">
                 {!user && <Redirect to="/login" />}
                 {user && <Create />}
+              </Route>
+              <Route exact path="/schedule">
+                {!user && <Redirect to="/login" />}
+                {user && <Schedule />}
               </Route>
               <Route exact path="/projects/:id">
                 {!user && <Redirect to="/login" />}

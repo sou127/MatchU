@@ -1,3 +1,6 @@
+.container {
+  background-color: #eee !important;
+}
 .project-filter {
     margin: 30px auto;
   }

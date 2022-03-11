@@ -42,8 +42,7 @@ export default function Dashboard() {
   }) : null
 
   return (
-    <div>
-      <h2 className="page-title">Dashboard</h2>
+    <div className='dashboard-div'>
       {error && <p className="error">{error}</p>}
       {documents && <ProjectFilter changeFilter={changeFilter} />}
       {projects && <ProjectList projects={projects} />}

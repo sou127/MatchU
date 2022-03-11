@@ -33,10 +33,6 @@ export default function Signup() {
       setThumbnailError('Selected file must be an image')
       return
     }
-    if (selected.size > 100000) {
-      setThumbnailError('Image file size must be less than 100kb')
-      return
-    }
     setThumbnailError(null)
     setThumbnail(selected)
     // console.log('thumbnail updated')
@@ -83,7 +79,7 @@ export default function Signup() {
       </label>
       <label>
         <span>About you:</span>
-        <input
+        <textarea
           required
           type="text" 
           onChange={(e) => setBio(e.target.value)} 

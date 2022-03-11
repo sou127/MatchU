@@ -9,6 +9,7 @@ import DashboardIcon from '../assets/dashboard_icon.svg'
 import AddIcon from '../assets/add_icon.svg'
 import UsersIcon from '../assets/users.svg'
 import { Link } from "react-router-dom"
+import CalendarIcon from '../assets/calendar.svg'
 
 export default function Sidebar() {
   const { user } = useAuthContext()
@@ -35,6 +36,12 @@ export default function Sidebar() {
               <NavLink to="/create">
                 <img src={AddIcon} alt="add project icon" />
                 <span>New Group</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/schedule">
+                <img src={CalendarIcon} width="25px" alt="add project icon" />
+                <span>Schedule</span>
               </NavLink>
             </li>
             <li>

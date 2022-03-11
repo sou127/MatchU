@@ -1,28 +1,46 @@
 .user-list {
-    padding: 30px;
     box-sizing: border-box;
-    background: #fbfbfb;
+    height: 50px;
     color: var(--heading-color);
 }
+.username {
+    padding-left: 20px;
+}
+.learningspan {
+    font-size: 16px;
+    color: gray;
+}
+.user-list-item {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+    padding-top: 10px;
+    padding-left: 20px;
+}
 .user-list a {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    width: 800px;
     text-decoration: none;
     color: black;
+    /* border: 1px solid black; */
 }
 .user-list a:hover {
     color: gray;
 }
 .user-list h2 {
     text-align: right;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
     font-size: 1.2em;
 }
 .user-list .user-list-item {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    margin: 20px auto;
+    margin: 5px auto;
+    padding-bottom: 10px;
 }
 .user-list .avatar {
     margin-left: 10px;
@@ -36,6 +54,15 @@
     width: 10px;
     height: 10px;
     background: greenyellow;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+.user-list .inactive-user {
+    display: inline-block;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
     border-radius: 50%;
     margin-top: 2px;
 }

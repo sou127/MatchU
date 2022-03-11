@@ -26,7 +26,6 @@ export default function Meeting() {
             apiKey: "6ddab6d4-0004-418e-a92d-8ce50b9f7038",
 
             containerId: null,
-
             micEnabled: true,
             webcamEnabled: true,
             participantCanToggleSelfWebcam: true,
@@ -36,7 +35,7 @@ export default function Meeting() {
             screenShareEnabled: true,
             whiteboardEnabled: true,
 
-            redirectOnLeave: "https://matchu.tech/",
+            redirectOnLeave: "https://matchu.tech/", //link
 
             joinScreen: {
             visible: true, 
