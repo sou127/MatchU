@@ -106,13 +106,13 @@ export default function LandingPage() {
       </section>
 
       <div class="wrap">
-        <h2 className='landh2'>Customer's voice </h2>
+        <h2>Customer's voice </h2>
         <div class="youtube">
           <div class="float-left" >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-_ZJhrkalFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0jrSPq-ffgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="float-right" >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-_ZJhrkalFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yl7ly_62AKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
